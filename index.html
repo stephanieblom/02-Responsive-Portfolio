@@ -7,47 +7,42 @@
     <title>Stephanie Blom - Home</title>
      <!-- Bring in bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
 </head>
 
 <style>
-     .navbar {
-            color: white;
-        }
 
-        .container {
-            margin:auto;
-            max-width: 800px;
-        }
+    body {
+        font-family: 'Raleway', sans-serif; 
+    }
+    .container {
+        margin:auto;
+        max-width: 1200px;
+    }
 </style>
 <body>
-    <!-- Static navbar responsive-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-info ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <a class="navbar-brand" href="#">Stephanie Blom</a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </div>
-            <div class ="col-md-9">
-                <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+   <!-- Static navbar -->
+   <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+    <a class="navbar-brand" href="#">Stephanie Blom</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+                <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 
     <!-- Main Body goes in Container -->
     <div class="container">
@@ -66,13 +61,16 @@
             <img class="img img-thumbnail" src="Assets-Images/IMG_0589.JPG">
         </div>
         <div class="col-lg-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae cumque corporis quis sed, quod pariatur! Officia aut tempore repellendus, culpa inventore magnam accusamus nemo fugiat debitis voluptates ratione omnis, nobis.</p>
+            <p>Hi! My name is Stephanie Blom. I am beginning my new adventure into Web Development. I am a mechanical engineer who found a passion for coding.</p>
+            <p>
+                I also love hiking, running, skiing, snowboarding, yoga, and music!
+            </p>
         </div>
         </div>
         <br>
 
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-            <a class="navbar-brand" href="#">Fixed bottom</a>
+        <nav class="navbar fixed-bottom navbar-dark bg-info">
+            <a class="navbar-brand" href="#">Stephanie Blom - Home</a>
         </nav>
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
