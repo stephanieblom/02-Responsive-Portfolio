@@ -8,44 +8,71 @@
      <!-- Bring in bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/4b53ea2f0f.js"></script>
 </head>
 <body>
 
     <style>
 
-        body {
+body {
         font-family: 'Raleway', sans-serif; 
-        }
-   
-        .container {
-            margin:auto;
-            margin-top: 15px;
-            max-width: 1200px;
-        }
+    }
+    .container {
+        margin:auto;
+        max-width: 1200px;
+    }
+    .hero {
+        height: 100vh;
+        background-image: url(Assets-Images/greyBG.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+    .navbar{
+        background-color: #F2F2F2;
+        width: 100%;
+        margin-right: 0;
+    }
+    .nav-item {
+        color: #585858;
+    }
+    .navbar-brand{
+        color: #585858;
+    }
+    form{
+        background-color: #F2F2F2;
+        padding: 10px;
+        padding-bottom: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #submit{
+        background-color: #585858;
+        color: white;
+    }
+    .fa-linkedin-square{
+        color: #585858;
+    }
     </style>
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+    <nav class="container-fluid navbar navbar-expand-lg" style="background-color: #F2F2F2; color: #585858;">
         <a class="navbar-brand" href="#">Stephanie Blom</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                    <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home   <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact  </a>
+                <a class="nav-item nav-link" href="portfolio.html"><i class="fa fa-files-o" aria-hidden="true"></i> Portfolio</a>
+            </div>
         </div>
     </nav>
+    <br>
 
+<section class="hero">
     <div class ="container">
         <form>
             <div class="form-group">
@@ -62,17 +89,26 @@
               <label for="exampleFormControlTextarea1">Message</label>
               <textarea class="form-control" id="Message" rows="3"></textarea>
             </div>
+            <br>
     
-            <button type="button" class="btn btn-info">Submit</button>
+            <button type="button" id="submit" class="btn">Lets Connect!</button>
+            <br>
+            <br>
+            <div >
+                <a href="https://www.linkedin.com/in/stephanie-blom/"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
         </form>
 
+
         <!-- Sticky Footer -->
-        <nav class="navbar fixed-bottom navbar-dark bg-info">
+  
+        <nav class="navbar fixed-bottom">
             <a class="navbar-brand" href="#">Stephanie Blom - Contact Me</a>
         </nav>
 
         
     </div>
+</section>
     
 
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

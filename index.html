@@ -8,6 +8,8 @@
      <!-- Bring in bootstrap stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/4b53ea2f0f.js"></script>
 </head>
 
 <style>
@@ -16,47 +18,62 @@
         font-family: 'Raleway', sans-serif; 
     }
     .container {
-        margin:auto;
         max-width: 1200px;
+        width: 100%
+    }
+    .hero {
+        height: 100vh;
+        background-image: url(Assets-Images/greyBG.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    } 
+    .navbar{
+        background-color: #F2F2F2;
+        width: 100%;
+        margin-right: 0;
+    }
+    .nav-item {
+        color: #585858;
+    }
+    .navbar-brand{
+        color: #585858;
+    }
+    .card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
 </style>
 <body>
    <!-- Static navbar -->
-   <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+   <nav class="container-fluid navbar navbar-expand-lg" style="background-color: #F2F2F2; color: #585858;">
     <a class="navbar-brand" href="#">Stephanie Blom</a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-                <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home   <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact  </a>
+            <a class="nav-item nav-link active" href="portfolio.html"><i class="fa fa-files-o" aria-hidden="true"></i> Portfolio</a>
+        </div>
     </div>
-</nav>
-
-
+    </nav>
     <!-- Main Body goes in Container -->
+<section class= "hero">
     <div class="container">
         <div class="row">
         <div class="col-lg-12">
         <!-- The content in this div gets wrapped in a card -->
-            <div class="card">
+            <div class="card shadow bg-white rounded">
             <div class="card-body">
                 About Me
             </div>
             </div>
         </div>
         </div>
+        <br> 
         <div class="row">
         <div class="col-lg-5">
             <img class="img img-thumbnail" id="myPhoto" src="Assets-Images/IMG_0589.JPG" >
@@ -70,7 +87,9 @@
         </div>
         <br>
 
-        <nav class="navbar fixed-bottom navbar-dark bg-info">
+</section>
+
+        <nav class="navbar fixed-bottom">
             <a class="navbar-brand" href="#">Stephanie Blom - Home</a>
         </nav>
 
